@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "roll": "bun run src/cli.ts",
-    "build": "bun build src/cli.ts --outfile dist/cc-buddy-roller.js --target bun"
+    "build": "bun build src/cli.ts --outfile dist/cc-buddy-roller.js --target bun",
+    "format": "prettier --write 'src/**/*.ts'"
   },
   "devDependencies": {
-    "typescript": "^5.5.0",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "prettier": "^3.8.1",
+    "typescript": "^5.5.0"
   }
 }
