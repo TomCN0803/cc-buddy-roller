@@ -87,8 +87,7 @@ function showHelp(): void {
 ${BOLD}cc-buddy-roller${RESET} — Roll a Claude Code buddy companion
 
 ${BOLD}USAGE${RESET}
-  bun run src/cli.ts [options]
-  pnpm roll [-- options]
+  cc-buddy-roller [options]
 
 ${BOLD}OPTIONS${RESET}
   --seed <string>    Use a specific seed (deterministic roll)
@@ -97,10 +96,10 @@ ${BOLD}OPTIONS${RESET}
   --help             Show this help message
 
 ${BOLD}EXAMPLES${RESET}
-  pnpm roll                        ${DIM}# Random roll${RESET}
-  pnpm roll -- --seed hello        ${DIM}# Deterministic roll${RESET}
-  pnpm roll -- --seed hello --json ${DIM}# JSON output${RESET}
-  pnpm roll -- --all-frames        ${DIM}# Show animation frames${RESET}
+  cc-buddy-roller                     ${DIM}# Random roll${RESET}
+  cc-buddy-roller --seed hello        ${DIM}# Deterministic roll${RESET}
+  cc-buddy-roller --seed hello --json ${DIM}# JSON output${RESET}
+  cc-buddy-roller --all-frames        ${DIM}# Show animation frames${RESET}
 `)
 }
 
