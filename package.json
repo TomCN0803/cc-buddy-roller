@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "Roll a Claude Code buddy companion from the terminal",
   "type": "module",
+  "bin": {
+    "cc-buddy-roller": "dist/cc-buddy-roller.mjs"
+  },
   "scripts": {
     "roll": "bun run src/cli.ts",
-    "build": "bun build src/cli.ts --outfile dist/cc-buddy-roller.js --target bun",
+    "build": "tsdown",
     "format": "prettier --write 'src/**/*.ts'"
   },
+  "packageManager": "pnpm@10.11.0",
   "devDependencies": {
-    "@types/bun": "latest",
+    "@types/node": "^25.5.0",
     "prettier": "^3.8.1",
+    "tsdown": "^0.21.7",
     "typescript": "^5.5.0"
   }
 }

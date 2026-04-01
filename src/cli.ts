@@ -1,4 +1,3 @@
-#!/usr/bin/env bun
 import { rollRandom, rollWithSeed, type Roll } from './roll.js';
 import { renderFace, renderSprite } from './sprites.js';
 import { RARITY_STARS, STAT_NAMES, type Rarity, type StatName } from './types.js';
