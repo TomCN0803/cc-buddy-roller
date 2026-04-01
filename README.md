@@ -7,7 +7,7 @@ The buddy system is a hidden companion feature inside Claude Code. Each buddy is
 ## Quick Start
 
 ```bash
-# Prerequisites: Bun (>= 1.1), pnpm
+# Prerequisites: Node.js (>= 20) or Bun (>= 1.1), pnpm
 pnpm install
 pnpm roll
 ```
@@ -79,8 +79,9 @@ No network requests. No API keys. Everything runs locally.
 
 ## Tech Stack
 
-- **Runtime**: [Bun](https://bun.sh/) (>= 1.1)
+- **Runtime**: [Node.js](https://nodejs.org/) (>= 20) or [Bun](https://bun.sh/) (>= 1.1)
 - **Language**: TypeScript
+- **Bundler**: [tsdown](https://tsdown.dev/) (powered by [Rolldown](https://rolldown.rs/))
 - **Package Manager**: [pnpm](https://pnpm.io/)
 - **Dependencies**: Zero runtime dependencies
 
@@ -90,8 +91,9 @@ No network requests. No API keys. Everything runs locally.
 cc-buddy-roller/
 ├── package.json
 ├── tsconfig.json
+├── tsdown.config.ts
 ├── README.md
-├── README_CN.md
+├── README.zh-CN.md
 └── src/
     ├── types.ts      # Type definitions & constants
     ├── roll.ts       # PRNG & generation algorithm

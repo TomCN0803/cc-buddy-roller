@@ -7,7 +7,7 @@ Claude Code 内置了一套隐藏的伙伴系统，每个 Buddy 都由种子（s
 ## 快速开始
 
 ```bash
-# 前置要求：Bun (>= 1.1)、pnpm
+# 前置要求：Node.js (>= 20) 或 Bun (>= 1.1)、pnpm
 pnpm install
 pnpm roll
 ```
@@ -79,8 +79,9 @@ pnpm roll -- --help                  # 查看帮助
 
 ## 技术栈
 
-- **运行时**：[Bun](https://bun.sh/) (>= 1.1)
+- **运行时**：[Node.js](https://nodejs.org/) (>= 20) 或 [Bun](https://bun.sh/) (>= 1.1)
 - **语言**：TypeScript
+- **构建工具**：[tsdown](https://tsdown.dev/)（基于 [Rolldown](https://rolldown.rs/)）
 - **包管理**：[pnpm](https://pnpm.io/)
 - **运行时依赖**：无（零依赖）
 
@@ -90,8 +91,9 @@ pnpm roll -- --help                  # 查看帮助
 cc-buddy-roller/
 ├── package.json
 ├── tsconfig.json
+├── tsdown.config.ts   # 构建配置
 ├── README.md          # 英文文档
-├── README_CN.md       # 中文文档
+├── README.zh-CN.md    # 中文文档
 └── src/
     ├── types.ts       # 类型定义与常量
     ├── roll.ts        # 伪随机数生成与抽取算法
