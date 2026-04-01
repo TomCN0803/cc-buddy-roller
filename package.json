@@ -1,0 +1,14 @@
+{
+  "name": "cc-buddy-roller",
+  "version": "1.0.0",
+  "description": "Roll a Claude Code buddy companion from the terminal",
+  "type": "module",
+  "scripts": {
+    "roll": "bun run src/cli.ts",
+    "build": "bun build src/cli.ts --outfile dist/cc-buddy-roller.js --target bun"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/bun": "latest"
+  }
+}
