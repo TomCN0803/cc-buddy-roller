@@ -9,7 +9,9 @@
   "scripts": {
     "roll": "bun run src/cli.ts",
     "build": "tsdown",
-    "format": "prettier --write 'src/**/*.ts'"
+    "format": "prettier --write 'src/**/*.ts'",
+    "dev:web": "bun run src/server.ts",
+    "serve": "node dist/cc-buddy-roller-server.mjs"
   },
   "packageManager": "pnpm@10.33.0",
   "devDependencies": {
